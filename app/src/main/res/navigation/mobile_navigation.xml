@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_aboutUs"
+        android:name="com.nadeem.fadesalon.ui.AboutUsFragment"
+        android:label="@string/menu_aboutUs"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/nav_reachUs"
+        android:name="com.nadeem.fadesalon.ui.ReachUsFragment"
+        android:label="@string/menu_reachUs"
+        tools:layout="@layout/fragment_reach_us" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.nadeem.fadesalon.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.nadeem.fadesalon.ui.home.HomeSecondFragment"
+        android:label="@string/home_second"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_appointment"
+        android:name="com.nadeem.fadesalon.ui.AppointmentFragment"
+        android:label="@string/menu_appointment"
+        tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.nadeem.fadesalon.ui.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.nadeem.fadesalon.ui.AdminFragment"
+        android:label="@string/menu_admin"
+        tools:layout="@layout/fragment_admin" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.nadeem.fadesalon.ui.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

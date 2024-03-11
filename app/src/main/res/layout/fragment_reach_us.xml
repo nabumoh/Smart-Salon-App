@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    android:orientation="vertical"
+
+    android:rotationX="-360"
+    tools:context=".ui.ReachUsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="359dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="84dp"
+            android:backgroundTint="@color/colorWhite"
+            android:drawableLeft="@drawable/ic_phone"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:text="\n   Phone : 050-748-6336"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:fontFamily="@font/courgette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.192"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="367dp"
+            android:layout_height="67dp"
+            android:layout_marginTop="36dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_map"
+            android:gravity="start"
+            android:paddingLeft="8dp"
+            android:text="\n   Address : Smart Salon, Haifa Hanamal 54"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:fontFamily="@font/courgette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.227"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="361dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_appointment"
+            android:gravity="start"
+            android:paddingLeft="10dp"
+            android:text="   Work-Hours :\n   sun - thu  9AM - 6PM \n   sat 12AM - 6PM"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            app:fontFamily="@font/courgette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.197"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="336dp"
+            android:layout_height="63dp"
+            android:layout_marginTop="140dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#313232"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+            <Button
+                android:id="@+id/wazeBtn"
+                android:layout_width="119dp"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/circle_shape"
+                android:backgroundTint="@color/colorWhite"
+                android:text="ניווט בעזרת Waze"
+                android:textAllCaps="false"
+                app:fontFamily="@font/courgette" />
+
+            <Button
+                android:id="@+id/callBtn"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/circle_shape"
+                android:backgroundTint="@color/colorWhite"
+                android:text="יצירת קשר"
+                android:textAllCaps="false"
+                app:fontFamily="@font/courgette" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview9"
+            android:layout_width="159dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:text="Follow Us"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="25sp"
+            app:fontFamily="@font/courgette"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="273dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="28dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textview9"
+            app:layout_constraintVertical_bias="0.0">
+
+            <ImageButton
+                android:id="@+id/instaBtn"
+                android:layout_width="46dp"
+                android:layout_height="42dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="11dp"
+
+                app:srcCompat="@drawable/instagram" />
+
+            <ImageButton
+                android:id="@+id/facebookBtn"
+                android:layout_width="51dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="51dp"
+                android:layout_marginLeft="51dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="11dp"
+                android:layout_toStartOf="@+id/whatsBtn"
+                android:layout_toLeftOf="@+id/whatsBtn"
+                android:layout_toEndOf="@+id/instaBtn"
+                android:layout_toRightOf="@+id/instaBtn"
+
+                app:srcCompat="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/whatsBtn"
+                android:layout_width="54dp"
+                android:layout_height="42dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="11dp"
+                app:srcCompat="@drawable/whatsapp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/back_arrow"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_arrow_back_black"
+            app:layout_constraintBottom_toTopOf="@+id/textView6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.041"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

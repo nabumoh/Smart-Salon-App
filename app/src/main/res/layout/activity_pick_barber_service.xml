@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    tools:context=".clientSide.pick_Barber_Service">
+
+
+    <Spinner
+        android:id="@+id/barberSpinnerBtn"
+        android:layout_width="203dp"
+        android:layout_height="50dp"
+        android:background="@drawable/circle_shape"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.346"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <TextView
+        android:id="@+id/pickedServiceTV"
+        android:layout_width="240dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginRight="107dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=" Picked Service"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/serviceSpinnerBtn" />
+
+    <TextView
+        android:id="@+id/pickedBarberTV"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text=" Picked Barber"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barberSpinnerBtn" />
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="128dp"
+        android:layout_height="50dp"
+        android:text="Next"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorNavy"
+        android:fontFamily="@font/courgette"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickedServiceTV"
+        app:layout_constraintVertical_bias="0.366" />
+
+    <Spinner
+        android:id="@+id/serviceSpinnerBtn"
+        android:layout_width="207dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginRight="132dp"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:src="@drawable/ic_arrow_back_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="238dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:text="Choose Your Barber :"
+        android:textColor="@color/colorWhite"
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/courgette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/back_arrow" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="238dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginRight="103dp"
+        android:text="Choose Your Service :"
+        android:textColor="@color/colorWhite"
+
+        android:shadowColor="@color/colorBlack"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:fontFamily="@font/courgette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pickedBarberTV" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

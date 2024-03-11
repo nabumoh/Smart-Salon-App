@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    tools:context=".adminSide.AdminUpdateProfile">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="199dp"
+        android:layout_height="167dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Admin \n Update Credentials"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        app:fontFamily="@font/courgette"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="320dp"
+        android:layout_height="324dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="#B3393939"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.946">
+
+        <EditText
+            android:id="@+id/nameFetch"
+            android:layout_width="248dp"
+            android:layout_height="46dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="54dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_profile"
+            android:drawableTint="#000000"
+            android:ems="10"
+            android:hint="Name"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000" />
+
+        <EditText
+            android:id="@+id/emailFetch"
+            android:layout_width="248dp"
+            android:layout_height="46dp"
+            android:layout_below="@+id/nameFetch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="57dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#FFFFFF"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawableTint="#000000"
+            android:ems="10"
+            android:hint="E-mail"
+            android:paddingLeft="10dp"
+            android:textColorHint="#000000" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emailFetch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="52dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="43dp"
+            android:layout_marginRight="43dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/colorNavy"
+            android:textColor="@color/colorWhite"
+            android:text="Save"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameFetch"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="171dp"
+            android:layout_marginRight="171dp"
+            android:text="E-mail :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:fontFamily="@font/courgette" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="49dp"
+            android:layout_marginLeft="49dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="154dp"
+            android:layout_marginRight="154dp"
+            android:text="FullName :"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:fontFamily="@font/courgette" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintEnd_toStartOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

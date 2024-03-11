@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1071298945030",
+    "project_id": "fadesalon-bb20b",
+    "storage_bucket": "fadesalon-bb20b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071298945030:android:7cae05ac0782f2c1cc2387",
+        "android_client_info": {
+          "package_name": "com.nadeem.fadesalon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071298945030-fs7e8qr742t3ede99cne1av2s9ck9omf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nadeem.fadesalon",
+            "certificate_hash": "0e46e59f0593c0111e382a116bd62ca81d3dd936"
+          }
+        },
+        {
+          "client_id": "1071298945030-5b7268k3ejf7akmhh9ev7cui4of2ssf4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArz1H40uraKQ6H2ucXXPJDJmSkfrhWgMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071298945030-5b7268k3ejf7akmhh9ev7cui4of2ssf4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bg"
+    tools:context=".ui.AppointmentFragment">
+
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        android:layout_width="44dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_arrow_back_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BookBtn"
+        android:layout_width="240dp"
+        android:layout_height="65dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorNavy"
+        android:fontFamily="@font/courgette"
+        android:text="Book An Appointment"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.759" />
+
+    <Button
+        android:id="@+id/cancelBooking"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorNavy"
+        android:drawableRight="@drawable/cancelappointment"
+        android:fontFamily="@font/courgette"
+        android:gravity="center"
+        android:text="My Booking"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="16dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+</androidx.constraintlayout.widget.ConstraintLayout>

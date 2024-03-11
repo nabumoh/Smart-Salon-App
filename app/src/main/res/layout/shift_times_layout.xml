@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/Layout"
+        android:layout_width="374dp"
+        android:layout_height="130dp"
+        android:background="@drawable/circle_shape"
+        android:backgroundTint="@color/colorNavy">
+
+        <EditText
+            android:id="@+id/StartShift"
+            android:layout_width="214dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginRight="48dp"
+            android:layout_toStartOf="@+id/StartBtn"
+            android:layout_toLeftOf="@+id/StartBtn"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/courgette"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:text=" hh:mm ..." />
+
+        <Button
+            android:id="@+id/StartBtn"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/colorOrange"
+            android:fontFamily="@font/courgette"
+            android:textColor="@color/colorWhite"
+            android:text="Start Shift"
+            />
+
+        <EditText
+            android:id="@+id/EndShift"
+            android:layout_width="203dp"
+            android:layout_height="44dp"
+            android:layout_below="@+id/StartShift"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_marginBottom="20dp"
+            android:layout_toStartOf="@+id/EndBtn"
+            android:layout_toLeftOf="@+id/EndBtn"
+            android:fontFamily="@font/courgette"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/colorWhite"
+            android:ems="10"
+            android:inputType="date"
+            android:text=" hh:mm ..." />
+
+        <Button
+            android:id="@+id/EndBtn"
+            android:layout_width="101dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/StartBtn"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="@color/colorOrange"
+            android:fontFamily="@font/courgette"
+            android:text="End Shift"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>
