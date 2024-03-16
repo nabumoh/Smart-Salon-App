@@ -41,7 +41,7 @@
                 android:background="@drawable/circle_shape"
                 android:backgroundTint="@color/colorNavy"
                 android:gravity="center_horizontal"
-                android:text="Developed by Narmen"
+                android:text="Developed by Narmen and Shokry"
                 android:textAlignment="center"
                 android:padding="18dp"
                 android:textColor="@color/colorWhite"
